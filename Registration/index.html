@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+	<form id="registration" onsubmit="handleEvent(event)">
+        <h1>Registration Form</h1>
+		<div class="div1">
+			<label for="name">Name: </label>
+			<input type="text" id="name" name="name" required>
+		</div>
+		<div class="div1">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+		</div>
+		<div class="div1">
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" minlength="8" required>
+		
+		</div>
+        <div class="div1">
+            <label for="gender">gender:</label>
+			<div class="div2">
+				<input type="radio" id="gender" name="gender" required>male
+				<input type="radio" id="gender" name="gender" required>female
+
+			</div>
+        </div>
+
+		<input type="submit" value="Register">
+	</form>
+
+	<div id="registered">
+		<h2>Registration Details:</h2>
+		<h4><b>Name:</b> <span id="registered-name"></span></h4>
+		<h4><b>Email: </b><span id="registered-email"></span></h4>
+		<h4><b>Password:</b> <span id="registered-password"></span></h4>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
